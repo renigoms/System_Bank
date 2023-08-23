@@ -5,7 +5,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-import java.text.ParseException;
 
 import javax.swing.JButton;
 import javax.swing.JOptionPane;
@@ -238,13 +237,15 @@ public class FrameDePaineisPosLoginController implements ActionListener{
 		}
 		
 		JButton voltarSacar = this.sacarView.getVoltarButton();
-		if(e.getSource() == voltarSacar)
+		if(e.getSource() == voltarSacar) {
+			dadosConta.setConta(sacarView.getConta());
 			getCardLayout().show(posLogin.getPanelCardContanier(), "inforConta");
-			
+		}	
 		JButton voltarDepositar = this.depositarView.getVoltarButton();
-		if(e.getSource() == voltarDepositar)
+		if(e.getSource() == voltarDepositar) {
+			dadosConta.setConta(depositarView.getConta());
 			getCardLayout().show(posLogin.getPanelCardContanier(), "inforConta");
-		
+		}
 		JButton realizarSaque = sacarView.getLoginButton();
 		if(e.getSource() == realizarSaque) {
 			if(sacarView.getValorField().getText().isEmpty()) {
