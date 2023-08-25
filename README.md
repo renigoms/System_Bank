@@ -2,7 +2,7 @@
 <em>Estudos para a cadeira de modelagem e programação orientada a objeto.</em>
 
 ## Sobre o projeto
-<p>✍️ O projeto tem como objetivo servi como estudo de composição, padrão MVC, tratamento de evento e interface gráfica.</p>
+<p>✍️ O projeto tem como objetivo servi como estudo de composição, padrão MVC, tratamento de evento e interface gráfica utlizando a linguagem java.</p>
 
 * <Strong>Instituição:</Strong> Universidade Federal Rural de Pernambuco - Unidade Acadêmica de Serra Talhada.
 
